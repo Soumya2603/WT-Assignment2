@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ques2 {
+    public static void main(String[] args) {
+        Scanner in= new Scanner(System.in);
+        System.out.println("Enter the length of the array:");
+        int len = in.nextInt();
+        
+        int [] arr = new int[len];
+        System.out.println("Enter the elements of the array:");
+
+        for(int i=0; i<len; i++ )
+        {
+            arr[in.nextInt()]++;
+        }
+        
+        System.out.println("Sorted array after counting sort: ");
+        for(int i = 0; i <= 20; i++)
+        {
+            for(int j=0; j < arr[i]; j++)
+            {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
